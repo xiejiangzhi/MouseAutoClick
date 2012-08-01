@@ -79,11 +79,9 @@ EXPORT LRESULT CALLBACK mouse_hook_callback(int nCode, WPARAM wParam, LPARAM lPa
 		std::cout<<"up!"<<std::endl;
 
 		if (user_mouse_event){ break; }
-		//if (HIWORD(GetAsyncKeyState(VK_LBUTTON)) && HIWORD(GetAsyncKeyState(VK_RBUTTON))) {
-			kill_timer(time_id);
-			kill_timer(time2_id);
-			time_id = time2_id = 0;
-		//}
+		kill_timer(time_id);
+		kill_timer(time2_id);
+		time_id = time2_id = 0;
 		break;
 	}
 
