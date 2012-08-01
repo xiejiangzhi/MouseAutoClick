@@ -53,3 +53,4 @@ bool quit_callback(void* p_data, WPARAM wParam, LPARAM lParam){
 
 	return false;
 }
+

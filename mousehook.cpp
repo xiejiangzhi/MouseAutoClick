@@ -130,7 +130,5 @@ void click(bool down, bool up){
 	user_mouse_event = true;
 	if (down) { mouse_event(down_type, 0, 0, 0, GetMessageExtraInfo()); }
 	if (up) { mouse_event(up_type, 0, 0, 0, GetMessageExtraInfo()); }
-
-
 	user_mouse_event = false;
 }
